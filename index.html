@@ -1,0 +1,46 @@
+<!doctypehtml>
+<html>
+
+<head>
+    <title>SketchToPhoto</title>
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {background-color: rgb(20, 43, 48);}
+    h2   {color: green;}
+    p    {color: red;}
+    </style>
+<p >
+    <h2 style="text-align:center;">Drawing App | White Board</h2>
+</p>
+
+<body>
+    <!--CODE TO BE WRITTEN HERE--->
+    <!--creating a div for canvas where drawing is to be made-->
+    <div id="canvasDiv"></div>
+    
+    <div class="button-bars">
+        <button id="clear">CLEAR</button>
+        <button id="save">SAVE</button>
+    </div>
+    <h2 style="text-align:center">Saved Board</h2>
+    <div id="img-container">
+        <img id="savedImg" alt="saved picture" src="">
+    </div>
+
+    <!-- Popup at the start -->
+    <div onclick="closePopup()" id="outer-popup"></div>
+    <div id="onstart-popup">
+        <h2>Drawing App</h2>
+        <p>
+            Welcome to the Drawing App. Click on the canvas to draw, click the clear button to clear the canvas, 
+            and click the save button to save your drawing. Have fun!
+        </p>
+        <div onclick="closePopup()">&times;</div>
+    </div>
+    
+</body>
+
+<script src="script.js"></script>
+</html>
